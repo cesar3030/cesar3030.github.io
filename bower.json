@@ -1,0 +1,30 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cesar3030/cesar3030.github.io",
+  "authors": [
+    "César Jeanroy <cesar.jeanroy@gmail.com>"
+  ],
+  "description": "My portfolio website",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "HTML5",
+    "jQuery",
+    "Material-Design-Lite"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.0.4",
+    "jquery": "~2.1.4"
+  }
+}
