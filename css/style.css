@@ -1,4 +1,75 @@
 
+/*
+* === Header ===
+*/
+.pf-header{
+  position: fixed;
+  height:60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 50;
+  background-color: #ffffff;
+  font-family: 'Lato', Arial, sans-serif;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.pf-header nav {
+  float:right;
+  height: 100%;
+  padding-right:40px;
+}
+
+.pf-header nav a{ 
+  display: inline-block;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0 0.4em 0;
+  padding-top: 9px;
+  font-size: 0.8em;
+  font-family: 'Roboto';
+  cursor: pointer;
+  color: #499ff4;
+  outline: none;
+  text-decoration: none;
+}
+.pf-header nav a:hover{
+  border-bottom: 3px solid #499ff4;
+}
+
+.pf-header span{
+  height: 100%;  
+  line-height: 60px;
+  color: #499ff4;
+  font-size: 2em;
+  font-family: 'Roboto';
+  float:left;
+  padding-left: 10px;
+}
+
+.pf-header-show{
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+.pf-header-hide{
+  -webkit-transform: translateY(-60px);
+  -moz-transform: translateY(-60px);
+  transform: translateY(-60px);
+}
+
+
+
+
 
 /*
 * === General ===
@@ -11,25 +82,37 @@ body {
   min-height: 100%;
 }
 
-.pf-header{
+.pf-welcome__main{
   width:100%;
   min-height: 75%;
   height: 75%;
 }
 
-  .pf-header .pf-header__content--blue{
+.pf-welcome__plus{
+  width:100%;
+  min-height: 25%;
+  height: 25%;
+}
+
+  .pf-welcome--blue{
     background-color: #499ff4;
-    min-height: 100%;
-    height: 100%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
-
-  .pf-header .pf-header-btn{
+  .pf-welcome--white{
+    background-color: #ffffff;
+  }
+  .pf-welcome-btn{
     float:right;
     margin-top:-29px;
     margin-right: 3%;
   }
 
+
+section{
+  width:100%;
+  min-height: 100%;
+  height: 100%;
+}
 
 .pf-section{
   width:100%;
@@ -37,21 +120,12 @@ body {
   height: 100%;
 }
   
-  .pf-section .pf-section__page{
-    min-height: 100% ;
-    height: 100%;
-  }
-  
-  .pf-section .pf-section--red{
+  .pf-section--red{
     background-color: #F44336;
   }
-  .pf-section .pf-section--blue{
+  .pf-section--blue{
     background-color: #499ff4;
   }
-  .pf-section .pf-section--white{
+  .pf-section--white{
     background-color: #ffffff;
-  }.pf-section .pf-section__welcome{
-    min-height: 75%;
-    height: 75%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }

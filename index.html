@@ -15,27 +15,62 @@
     <!-- JS -->
     <script src="./bower_components/jquery/dist/jquery.min.js"></script> 
     <script src="./bower_components/material-design-lite/material.min.js"></script>
-    <script src="./bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="./bower_components/waypoints/lib/shortcuts/sticky.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./bower_components/waypoints/lib/jquery.waypoints.min.js"></script>    
+    <script src="./js/modernizr.custom.js"></script>
+    <script src="./js/waypoints.min.js"></script>
 
   </head>
-  <body>  
-  <header class="pf-header ha-waypoint" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
-    <div class="pf-header__content--blue">     
+  <body> 
+  <header id="pf-header" class="pf-header pf-header-hide">           
+        <span>César Jeanroy</span>
+        <nav>
+          <a>Experiences</a>
+          <a>Education</a>
+          <a>Technical skills</a>
+          <a>Projects</a>
+          <a>Contact</a>
+        </nav>
+  </header> 
+  <section class="pf-waypoint">
+    <div class="pf-welcome__main pf-welcome--blue">     
     </div>
-    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-header-btn">
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-welcome-btn">
         <i class="material-icons">add</i>
     </button>
-  </header>
-  <section class="ha-waypoint pf-section" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
-    <div class="pf-section__page pf-section--white"></div>
+    <div class="pf-welcome__plus">
+    </div>
   </section>
-  <section class="ha-waypoint pf-section" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
-    <div class="pf-section__page pf-section--red"></div>
+  <section class="pf-waypoint" data-animate-down="pf-header-hide" data-animate-up="pf-header-hide">
+    <div class="pf-section pf-section--white"></div>
   </section>
-  <section class="ha-waypoint pf-section" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
-    <div class="pf-section__page pf-section--white"></div>
+  <section class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-hide">
+    <div class="pf-section pf-section--red"></div>
   </section>
+  <section class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-show">
+    <div class="pf-section pf-section--white"></div>
+  </section>
+
+  
+  <script type="text/javascript">
+    var $head = $( '#pf-header' );
+  
+  $( '.pf-waypoint' ).each( function(i) {
+  var $el = $( this ),
+    animClassDown = $el.data( 'animateDown' ),
+    animClassUp = $el.data( 'animateUp' );
+
+  $el.waypoint( function( direction ) {
+    console.log(direction);
+    if( direction === 'down' && animClassDown ) {
+      $head.attr('class', 'pf-header ' + animClassDown);
+      console.log(animClassDown);
+    }
+    else if( direction === 'up' && animClassUp ){
+      $head.attr('class', 'pf-header ' + animClassUp);
+      console.log(animClassUp);
+    }
+  }, { offset: '100%' } );
+} );
+  </script>
   </body>
 </html>
