@@ -2,17 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>César Jeanroy</title>	
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="./bower_components/material-design-lite/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/style.css">
     
-    <!-- JS -->   
-	<script src="/bower_components/material-design-lite/material.min.js"></script>
-	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script> 
+    <script src="./bower_components/material-design-lite/material.min.js"></script>
+    <script src="./bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="./bower_components/waypoints/lib/shortcuts/sticky.min.js"></script>
+    <script src="./js/main.js"></script>
+
   </head>
-  <body>
-    <h1>Hello there !</h1>
+  <body>  
+  <header class="pf-header ha-waypoint" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
+    <div class="pf-header__content--blue">     
+    </div>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-header-btn">
+        <i class="material-icons">add</i>
+    </button>
+  </header>
+  <section class="ha-waypoint pf-section" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
+    <div class="pf-section__page pf-section--white"></div>
+  </section>
+  <section class="ha-waypoint pf-section" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
+    <div class="pf-section__page pf-section--red"></div>
+  </section>
+  <section class="ha-waypoint pf-section" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
+    <div class="pf-section__page pf-section--white"></div>
+  </section>
   </body>
 </html>

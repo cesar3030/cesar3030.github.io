@@ -25,6 +25,8 @@
   ],
   "dependencies": {
     "material-design-lite": "~1.0.4",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3",
+    "waypoints": "~4.0.0"
   }
 }
