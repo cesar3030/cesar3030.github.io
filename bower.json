@@ -27,6 +27,7 @@
     "material-design-lite": "~1.0.4",
     "jquery": "~2.1.4",
     "normalize.css": "~3.0.3",
-    "waypoints": "~4.0.0"
+    "waypoints": "~4.0.0",
+    "jquery.scrollTo": "~2.1.1"
   }
 }
