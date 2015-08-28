@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./css/style.css">
     
     <!-- JS -->
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script> 
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script> 
     <script src="./bower_components/material-design-lite/material.min.js"></script>
     <script src="./bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="./bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
@@ -22,23 +23,30 @@
     <script src="./js/waypoints.min.js"></script>
 
   </head>
-  <body> 
-  <header id="pf-header" class="pf-header pf-header-hide">           
+  <body>
+  <header>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-mobile-navigation-trigger">
+        <span class="cd-menu-icon"></span>
+    </button>
+    <div id="pf-header" class="pf-header pf-header-hide">      
         <a href="#welcome"><span>César Jeanroy</span></a>
         <nav>
-          <a href="#experiences">Experiences</a>
-          <a href="#eduction">Education</a>
-          <a href="#technical-skills">Technical skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <ul>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#eduction">Education</a></li>
+            <li><a href="#technical-skills">Technical skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-  </header> 
+    </div>
+  </header>
   <section id="welcome" class="pf-waypoint">
     <div class="pf-welcome__main pf-welcome--blue">     
     </div>
     <a href="#experiences">
     <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-welcome-btn">
-        <i class="material-icons">add</i>
+        <i class="material-icons">keyboard_arrow_down</i>
     </button>
     </a>
     <div class="pf-welcome__plus">
