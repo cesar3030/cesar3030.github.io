@@ -293,7 +293,7 @@ footer{
   width:100%;
   min-height: 25%;
   height: 25%;  
-  position: relative;
+  position: absolute;
   z-index: 3;
   -webkit-box-shadow: 0px -5px 9px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow:    0px -5px 9px 0px rgba(0, 0, 0, 0.2);
@@ -316,12 +316,14 @@ footer{
 
 /* terminal */
 .pf-terminal{
-  min-width:500px;
+  min-width:400px;
   width: 50%;
   height: 80%;
+  color: rgba(255, 255, 255, 0.67);
   margin: auto;
   position: relative;
   top: 10%;
+  font-family: 'Roboto', sans-serif;
   z-index: 2;
   -moz-animation-name: pf-terminal--visible;
   -moz-animation-iteration-count: 1;
@@ -341,6 +343,8 @@ footer{
   .pf-terminal .pf-terminal-header{
     width: 100%;
     height:9%;
+    min-height: 39px;    
+    line-height: 39px;
     background-color: #383838;
     -webkit-border-top-left-radius: 3px;
     -webkit-border-top-right-radius: 3px;
@@ -355,7 +359,6 @@ footer{
     width: 14px;
     height: 14px;
     margin-left: 5px;
-    margin-top: 1.3%;
   }
   .pf-terminal .pf-terminal-header .btn-list{
     margin-left: 4px;
@@ -370,7 +373,8 @@ footer{
     background-color: red;
   }
 
-  .pf-terminal .pf-terminal-body{
+  .pf-terminal .pf-terminal-body{    
+    padding-top: 1%;
     background-color: rgba(78, 78, 78, 0.97);
     width: 100%;
     height:90%;
@@ -381,8 +385,29 @@ footer{
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
+    overflow-y:hidden;
+    overflow-x:hidden;
   }
+
+.pf-terminal .pf-terminal-line{
+  width:98%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.pf-terminal .pf-terminal-line div{
+  display: inline-block;
+  padding:4px 0 0 4px;
+}
+
+  .pf-terminal .pf-terminal-line .pf-terminal-line--title{    
+    font-weight: 700; 
+  }
+
+
+
+
+
+
 @media (max-width: 480px){
 /* terminal */
 .pf-terminal{
@@ -390,6 +415,15 @@ footer{
   min-width: 80%;
   height: 80%;
 }
+
+.pf-terminal .pf-terminal-header .btn{
+    display: inline-block;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    margin-top: 3.3%;
+  }
 
 }
 
@@ -417,6 +451,29 @@ footer{
     100% {
         transform: translateY(0);
     }
+}
+
+/* typed.js CSS Cursor */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 
