@@ -54,7 +54,6 @@ function headerEffect(){
     animClassUp = $el.data( 'animateUp' );
 
     $el.waypoint( function( direction ) {
-
       if( direction === 'down' && animClassDown ) {
         console.log("section:"+$el.attr("id")+"\n action down:"+animClassDown);
         //If it's the mobile version the target is the trigger button, not the header
@@ -77,12 +76,12 @@ function headerEffect(){
 
       }
 
-    }, { offset: '100%' } );
+    }, { offset: '10%' } );
   });
 
   /* We manage the window's size transition*/
   $(window).resize(function(){
-
+$.waypoints('refresh');
     //If it's the desktop version, we hide the mobile menu button
     if($(window).width()>738){
       $(".pf-mobile-navigation-trigger").fadeOut(300);
