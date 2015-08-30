@@ -31,13 +31,15 @@ var index=0;
 * Fontions run when the page is loaded
 */
 $(document).ready(function(){
-  headerEffect();
+  //headerEffect();
   smoothNavigation();
   showMobileNavigation();
   terminalAnimation(); 
 });
 
-
+$(window).load(function(){
+  headerEffect();
+});
 /**
  * Function that initialise the header effect that show and hide the header 
  * depending of the sections being visited
@@ -54,6 +56,7 @@ function headerEffect(){
     $el.waypoint( function( direction ) {
 
       if( direction === 'down' && animClassDown ) {
+        console.log("section:"+$el.attr("id")+"\n action down:"+animClassDown);
         //If it's the mobile version the target is the trigger button, not the header
         if($(window).width()>738){
           $head.attr('class', 'pf-header ' + animClassDown); 
@@ -63,6 +66,7 @@ function headerEffect(){
         }              
       }
       else if( direction === 'up' && animClassUp ){
+        console.log("section:"+$el.attr("id")+"\n action up:"+animClassUp);
         //If it's the mobile version the target is the trigger button, not the header
         if($(window).width()>738){
            $head.attr('class', 'pf-header ' + animClassUp); 
@@ -75,6 +79,32 @@ function headerEffect(){
 
     }, { offset: '100%' } );
   });
+
+  /* We manage the window's size transition*/
+  $(window).resize(function(){
+
+    //If it's the desktop version, we hide the mobile menu button
+    if($(window).width()>738){
+      $(".pf-mobile-navigation-trigger").fadeOut(300);
+      $(".pf-mobile-navigation-trigger").find("span").first().removeClass("is-clicked");
+      
+      /*
+      If the button was display, it meens that the user had access to the menu, 
+      so we show the desktop navigation bar
+      */
+      if($(".pf-mobile-navigation-trigger").is(':visible')){
+        $head.attr('class', 'pf-header pf-header-show');
+      }
+      else{
+        $head.attr('class', 'pf-header pf-header-hide');
+      }
+    }
+    else{
+      $(".pf-mobile-navigation-trigger").fadeIn(300);          
+      $head.attr('class', 'pf-header pf-header-hide');
+      
+    }
+  });
 }
 
 /**
@@ -83,7 +113,6 @@ function headerEffect(){
 function smoothNavigation(){
   $("a").on('click',function(ev){
     ev.preventDefault();
-
     //When a link is clicked from the mobile navigation
     if($(window).width()<=738){
       $(".pf-mobile-navigation-trigger").find("span").first().removeClass("is-clicked");

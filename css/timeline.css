@@ -11,8 +11,8 @@
 
 #cd-timeline {
   position: relative;
-  padding-top: 7em;
-  margin-top: 2em;
+  padding-top: 14px;
+  /*margin-top: 2em;*/
 }
 #cd-timeline::before {
   /* this is the vertical line */
@@ -26,7 +26,7 @@
 }
 @media only screen and (min-width: 738px) {
   #cd-timeline {
-    margin-top: 3em;
+    margin-top:0.11px;    
   }
   #cd-timeline::before {
     left: 50%;
@@ -36,7 +36,7 @@
 
 .cd-timeline-block {
   position: relative;
-  margin: 6em 0 2em 1em;
+  margin: 2em 0 2em 1em;
 }
 .cd-timeline-block:after {
   content: "";
@@ -92,10 +92,10 @@
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
+.cd-education {
   background: #499ff4;
 }
-.cd-timeline-img.cd-movie {
+.cd-experience {
   background: #c03b44;
 }
 .cd-timeline-img.cd-location {
@@ -185,7 +185,7 @@
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);
   width: 60%;
 }
 .cd-timeline-content:after {
@@ -196,7 +196,7 @@
 .cd-timeline-content h2 {
   color: #499ff4;
   margin: 0;
-  font-size:25px;
+  font-size:22px;
 }
 .cd-timeline-content h3 {
   color: #499ff4;
@@ -243,7 +243,7 @@
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {     
-
+    font-size: 25px;
   }
   .cd-timeline-content p {
     font-size: 16px;
