@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./bower_components/material-design-lite/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/timeline.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     
     <!-- JS -->
@@ -20,7 +22,7 @@
     <script src="./bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="./bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
     <script src="./bower_components/typed.js/dist/typed.min.js"></script>
-    <script src="./js/main.js"></script> 
+    <script src="./js/main.js"></script>
     <script src="./js/modernizr.custom.js"></script>
     <script src="./js/waypoints.min.js"></script>
 
@@ -34,8 +36,8 @@
         <a href="#welcome"><span>César Jeanroy</span></a>
         <nav>
           <ul>
+            <li><a href="#education">Education</a></li>
             <li><a href="#experiences">Experiences</a></li>
-            <li><a href="#eduction">Education</a></li>
             <li><a href="#technical-skills">Technical skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -57,18 +59,77 @@
       </div>
     </div>
     </div>
-    <a href="#experiences">
+    <a href="#education">
     <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-welcome-btn">
         <i class="material-icons">keyboard_arrow_down</i>
     </button>
     </a>
     <div class="pf-welcome__plus pf-welcome--white">
+      <h1>César Jeanroy</h1>
+      <h2>Software Engineer student & Fullstack developer</h2>
     </div>
   </section>
-  <section id="experiences" class="pf-waypoint" data-animate-down="pf-header-hide" data-animate-up="pf-header-hide">
-    <div class="pf-section pf-section--white"></div>
-  </section>
-  <section id="eduction" class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-hide">
+  <section id="education" class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-hide">    
+    <div id="cd-timeline" class="cd-container pf-section pf-section--gray">    
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <i class="material-icons">account_balance</i>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Software Engineer</h2>
+        <p>École de Technologie Suppérieure</p>
+        <address>Montreal, Canada</address>
+        <span class="cd-date">2013 - 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <i class="material-icons">account_balance</i>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Computer Science DEC</h2>
+        <p>Cégep of Matane</p>
+        <address>Matane, Canada</address>
+        <span class="cd-date">2013</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+    
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <i class="material-icons">account_balance</i>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Computer Science DUT</h2>
+        <p>Institut universitaire et technologique</p>
+        <address>Belfort, France</address>
+        <span class="cd-date">2011 - 2013</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <i class="material-icons">account_balance</i>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Science Bachelor</h2>
+        <p>Lycée Pasteur</p>
+        <address>Besançon, France</address>
+        <span class="cd-date">2007 - 2011</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    
+  </div>
+  </section> <!-- cd-timeline -->
+  <section id="experiences" class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-hide">
     <div class="pf-section pf-section--red"></div>
   </section>
   <section id="technical-skills" class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-show">

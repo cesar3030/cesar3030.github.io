@@ -34,7 +34,7 @@ $(document).ready(function(){
   headerEffect();
   smoothNavigation();
   showMobileNavigation();
-  terminalAnimation();  
+  terminalAnimation(); 
 });
 
 
@@ -55,7 +55,7 @@ function headerEffect(){
 
       if( direction === 'down' && animClassDown ) {
         //If it's the mobile version the target is the trigger button, not the header
-        if($(window).width()>480){
+        if($(window).width()>738){
           $head.attr('class', 'pf-header ' + animClassDown); 
         }
         else if( animClassDown !== "pf-header-hide"){
@@ -64,7 +64,7 @@ function headerEffect(){
       }
       else if( direction === 'up' && animClassUp ){
         //If it's the mobile version the target is the trigger button, not the header
-        if($(window).width()>480){
+        if($(window).width()>738){
            $head.attr('class', 'pf-header ' + animClassUp); 
         }
         else{
@@ -85,7 +85,7 @@ function smoothNavigation(){
     ev.preventDefault();
 
     //When a link is clicked from the mobile navigation
-    if($(window).width()<=480){
+    if($(window).width()<=738){
       $(".pf-mobile-navigation-trigger").find("span").first().removeClass("is-clicked");
       $("#pf-header").switchClass("pf-header-show","pf-header-hide");
     }
