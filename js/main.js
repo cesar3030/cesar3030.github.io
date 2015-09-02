@@ -55,22 +55,22 @@ function headerEffect(){
 
     $el.waypoint( function( direction ) {
       if( direction === 'down' && animClassDown ) {
-        console.log("section:"+$el.attr("id")+"\n action down:"+animClassDown);
+        //console.log("section:"+$el.attr("id")+"\n action down:"+animClassDown);
         //If it's the mobile version the target is the trigger button, not the header
         if($(window).width()>738){
           $head.attr('class', 'pf-header ' + animClassDown); 
         }
-        else if( animClassDown !== "pf-header-hide"){
+        else if( animClassDown === "pf-header-show"){
           $(".pf-mobile-navigation-trigger").fadeIn(300);          
         }              
       }
       else if( direction === 'up' && animClassUp ){
-        console.log("section:"+$el.attr("id")+"\n action up:"+animClassUp);
+        //console.log("section:"+$el.attr("id")+"\n action up:"+animClassUp);
         //If it's the mobile version the target is the trigger button, not the header
         if($(window).width()>738){
            $head.attr('class', 'pf-header ' + animClassUp); 
         }
-        else{
+        else if(animClassUp === 'pf-header-hide'){
           $(".pf-mobile-navigation-trigger").fadeOut(300);
         } 
 
@@ -81,7 +81,8 @@ function headerEffect(){
 
   /* We manage the window's size transition*/
   $(window).resize(function(){
-$.waypoints('refresh');
+    //$.waypoints('refresh');
+    Waypoint.refreshAll()
     //If it's the desktop version, we hide the mobile menu button
     if($(window).width()>738){
       $(".pf-mobile-navigation-trigger").fadeOut(300);
