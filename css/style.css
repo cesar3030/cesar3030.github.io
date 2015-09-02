@@ -9,6 +9,7 @@ html{
 body {
   height: 100%;
   min-height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 section{
   width:100%;
@@ -137,7 +138,7 @@ section#welcome{
   margin: auto;
   position: relative;
   top: 10%;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
   z-index: 2;
   -moz-animation-name: pf-terminal--visible;
   -moz-animation-iteration-count: 1;
@@ -298,6 +299,118 @@ section#welcome{
 #education{
   background-color: rgba(128, 128, 128, 0.12);
 }
+
+
+/*
+* === Skills ===
+*/
+
+.pf-skills-title{
+  background-color:white;
+  color:black;
+  padding: 10px 16px 10px 16px;
+  margin:auto;
+  position: relative;
+  width:40%;
+  text-align: center;
+  box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);
+  z-index: 1;
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+
+.pf-skills-title h2{
+    color:#499ff4;
+    padding: 0;
+    margin: 0;
+}
+
+.pf-skills-content-title{
+    padding-top: 33px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #499ff4;
+    color : rgba(78, 78, 78, 0.8);
+    font-size: 24px;
+}
+
+.pf-skills-title ul{
+    padding: 0;
+    margin: 0;
+}
+
+.pf-skills-line{
+  width:100%;
+  margin:auto;
+  padding-top: 2%
+}
+
+.pf-skills-content{
+  display: inline-block;
+  width:21%;
+  margin-top:1.5%;
+  margin-left: 3%;
+  padding-bottom: 2%;
+  background-color: white;
+  box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);
+  color : rgba(78, 78, 78, 0.8);
+  vertical-align: top;
+}
+
+  .pf-skills-content ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .pf-skills-content .pf-skills-main{
+    font-weight: bold;
+    color : #499FF4;
+    line-height: 30px;
+  }
+
+@media (max-width: 738px){
+
+  .pf-skills-content-title{
+      padding-top: 33px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: #499ff4;
+      color : rgba(78, 78, 78, 0.8);
+      font-size: 18px;
+  }
+
+  .pf-skills-content h2{ 
+    font-size: 21px;   
+    text-align: center;
+    color: #499ff4;
+    color : rgba(78, 78, 78, 0.8);
+  }
+
+  .pf-skills-content{
+    display: inline-block;
+    width:43%;
+    margin-top:1.5%;
+    margin-left: 5%;
+    padding-bottom: 2%;
+    background-color: white;
+    box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);
+    color : rgba(78, 78, 78, 0.8);
+    vertical-align: top;
+  }
+
+  .pf-skills-content h2{ 
+    font-size: 18px;  
+    text-align: center;
+    color: #499ff4;
+    color : rgba(78, 78, 78, 0.8);
+  }
+}
+
+
+
+
 
 
 
