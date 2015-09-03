@@ -4,6 +4,98 @@
 		"selected_items":
 		[
 			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"pf-header",
+				"pf-header-hide"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"termin",
+				"terminalContent"
+			],
+			[
+				"remo",
+				"angular: removeClass"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"div",
+				"div	Tag"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"h",
+				"https"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
 				"bac",
 				"background-color"
 			],
@@ -28,14 +120,6 @@
 				"style	Tag"
 			],
 			[
-				"margin",
-				"margin-right"
-			],
-			[
-				"ma",
-				"margin-left"
-			],
-			[
 				"th",
 				"th	Tag"
 			],
@@ -46,18 +130,6 @@
 			[
 				"di",
 				"display"
-			],
-			[
-				"text",
-				"text-align"
-			],
-			[
-				"h",
-				"href	Attr"
-			],
-			[
-				"marg",
-				"margin-bottom"
 			],
 			[
 				"ba",
@@ -71,6 +143,47 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 10888,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 7875,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 5783,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/header.css",
+			"settings":
+			{
+				"buffer_size": 4867,
+				"line_ending": "Unix",
+				"name": "header.css"
+			}
+		},
+		{
+			"file": "css/timeline.css",
+			"settings":
+			{
+				"buffer_size": 9847,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -111,10 +224,31 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio"
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/bower_components/jquery/dist",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/bower_components/waypoints/lib",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/bower_components/waypoints/lib/shortcuts",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/img"
 	],
 	"file_history":
 	[
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/js/maint.js",
+		"/Users/Iron_Cesar/Downloads/vertical-timeline/js/main.js",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/css/component.css",
+		"/Users/Iron_Cesar/Downloads/full-screen-pop-out-navigation/css/style.css",
+		"/Users/Iron_Cesar/Downloads/full-screen-pop-out-navigation/index.html",
+		"/Users/Iron_Cesar/Downloads/full-screen-pop-out-navigation/css/reset.css",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/js/main.js",
+		"/Users/Iron_Cesar/Downloads/HeaderEffects/index.html",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/css/style.css",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/bower_components/waypoints/lib/noframework.waypoints.min.js",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/bower_components/waypoints/lib/noframework.waypoints.js",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/bower_components/waypoints/lib/jquery.waypoints.js",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/bower_components/waypoints/lib/jquery.waypoints.min.js",
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/index.html",
+		"/Users/Iron_Cesar/Downloads/mdl-templates/templates/android-dot-com/styles.css",
+		"/Users/Iron_Cesar/Downloads/mdl-templates/templates/android-dot-com/index.html",
+		"/Users/Iron_Cesar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Iron_Cesar/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
 		"/Users/Iron_Cesar/Dropbox/sauvegarde WWW 29 octobre 2013/CEESQ2/Style/style.css",
 		"/Users/Iron_Cesar/Desktop/minittest last fail.tns",
@@ -174,7 +308,6 @@
 		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Crabe_WebApplication/client/views/test.html",
 		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Crabe_WebApplication/e2e/main/main.spec.js",
 		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Crabe_WebApplication/client/app/main/main.controller.spec.js",
-		"/Users/Iron_Cesar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Iron_Cesar/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
 		"/Users/Iron_Cesar/WebstormProjects/Crabe_WebApplication/index.js",
 		"/Users/Iron_Cesar/WebstormProjects/Crabe_WebApplication/bower_components/angular-material/bower.json",
@@ -226,28 +359,20 @@
 		"/Users/Iron_Cesar/Desktop/CEESQ- STAGE/César Jeanroy/CEESQ 2/form_seance_info/fonctions_html.php",
 		"/Users/Iron_Cesar/Google Drive/chickens/Serveur2.js",
 		"/Users/Iron_Cesar/Google Drive/chickens/mysql.js",
-		"/Users/Iron_Cesar/Google Drive/chickens/Serveur.js",
-		"/Users/Iron_Cesar/Google Drive/LOG210_Team-JSP-on-Fire/Iteration 3/deleveryservic livrqison incluses.sql",
-		"/Users/Iron_Cesar/Google Drive/LOG210_Team-JSP-on-Fire/Iteration 3/script_update_bd.sql",
-		"/Users/Iron_Cesar/Google Drive/Composants web/mobile/liste qui se deroule au clic/bellows-2.0.0/lib/zeptojs/src/ajax.js",
-		"/Users/Iron_Cesar/Google Drive/Composants web/mobile/liste qui se deroule au clic/bellows-2.0.0/templates/templateSchema.js",
-		"/Users/Iron_Cesar/Downloads/bootstrap-datetimepicker-master/sample in bootstrap v3/index.html",
-		"/Users/Iron_Cesar/Google Drive/Composants web/mobile/liste qui se deroule au clic/bellows-2.0.0/package.json",
-		"/Users/Iron_Cesar/Google Drive/WEB_MAMP/drag-drop-shopping-cart/main.css",
-		"/Users/Iron_Cesar/Google Drive/WEB_MAMP/drag-drop-shopping-cart/index.html",
-		"/Users/Iron_Cesar/Google Drive/Bibliotheque/JS:JQuerry/akquinet-jquery-toastmessage-plugin-6f5d7bf 3/src/test/javascript/jquery.toastmessage.tests.js",
-		"/Users/Iron_Cesar/Downloads/akquinet-jquery-toastmessage-plugin-6f5d7bf/src/test/javascript/jquery.toastmessage.tests.js",
-		"/Users/Iron_Cesar/Google Drive/LOG210_Team-JSP-on-Fire/Iteration 2/Creation tbmenu.sql"
+		"/Users/Iron_Cesar/Google Drive/chickens/Serveur.js"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
 		"height": 96.0,
 		"where_history":
 		[
+			"<current file>",
+			"",
+			"<css>",
 			"<project>",
 			"<current file>",
 			"",
@@ -259,6 +384,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"40px",
+			"title",
+			"weight",
+			"color",
+			"0.11",
+			"min-width: 1170px",
+			"#cd-timeline",
+			"cd-timeline",
+			"1170px",
+			"1170",
+			"width",
+			"margin",
+			"cd-timeline-content",
+			"cd-timeline-block",
+			"cd-picture",
+			"2 em",
+			"img",
+			"background",
+			"cd-container",
+			"content",
+			"is-cl",
+			"isC",
+			"ha-waypoint",
+			"header",
+			"hide",
 			"crabeApp",
 			"workspaceWebApp",
 			"adhérants",
@@ -277,20 +427,177 @@
 		"regex": false,
 		"replace_history":
 		[
+			"min-width: 738px",
 			"md",
 			"\""
 		],
 		"reverse": false,
-		"show_context": true,
-		"use_buffer2": true,
+		"show_context": false,
+		"use_buffer2": false,
 		"whole_word": false,
-		"wrap": true
+		"wrap": false
 	},
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10453,
+								10453
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2958.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5783,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1518,
+								1518
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 623.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/header.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2919,
+								2919
+							]
+						],
+						"settings":
+						{
+							"auto_name": "header.css",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2098.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/timeline.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1602,
+								1602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5625.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -311,11 +618,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.413762597496,
 			1.0
 		],
 		"rows":
@@ -339,7 +653,7 @@
 	},
 	"output.find_results":
 	{
-		"height": 0.0
+		"height": 110.0
 	},
 	"pinned_build_system": "",
 	"project": "Portfolio.sublime-project",
@@ -383,7 +697,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 332.0,
+	"side_bar_width": 253.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

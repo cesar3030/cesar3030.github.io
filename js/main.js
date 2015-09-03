@@ -35,6 +35,7 @@ $(document).ready(function(){
   smoothNavigation();
   showMobileNavigation();
   terminalAnimation(); 
+  addEmailAddress();
 });
 
 $(window).load(function(){
@@ -205,6 +206,15 @@ function typeText(text){
         terminalAnimation();       
       }
   });
+}
+
+/**
+* Function that add in the HTML my email address to protect mailto links
+*/
+function addEmailAddress(){
+  var fristPart="contact";
+  var secondPart="cesarjeanroy.com";
+  $(".email-address").append("<i class='material-icons'>email</i><a href='mailto:"+fristPart+"@"+secondPart+"'><p>"+fristPart+"@"+secondPart+"</p></a>");
 }
 
 
