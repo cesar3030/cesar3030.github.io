@@ -32,10 +32,12 @@ var index=0;
 */
 $(document).ready(function(){
   //headerEffect();
+
   smoothNavigation();
   showMobileNavigation();
   terminalAnimation(); 
   addEmailAddress();
+  timelineEffects();
 });
 
 $(window).load(function(){
@@ -112,7 +114,7 @@ function headerEffect(){
  * Function that initialise the smoothNavigation
  */
 function smoothNavigation(){
-  $("a").on('click',function(ev){
+  $("a.nav").on('click',function(ev){
     ev.preventDefault();
     //When a link is clicked from the mobile navigation
     if($(window).width()<=738){
@@ -195,6 +197,10 @@ function addTerminalRow(object){
 
 /**
 * Function that type the text given in the last row of the terminal
+* 
+* For the terminal typing animation, i use the plugin
+* Typing.js ->  http://www.mattboldt.com/demos/typed-js/ 
+*
 */
 function typeText(text){
   $(".pf-terminal-line--content").last().typed({
@@ -209,7 +215,7 @@ function typeText(text){
 }
 
 /**
-* Function that add in the HTML my email address to protect mailto links
+* Function that add my email address in the DOM to protect mailto links
 */
 function addEmailAddress(){
   var fristPart="contact";
@@ -218,7 +224,41 @@ function addEmailAddress(){
 }
 
 
+/**
+* Function that initialise the timeline annimation
+*/
+function timelineEffects(){
+  timelineBlocks = $('.cd-timeline-block');
+  offset = 0.8;
 
+  //hide timeline blocks which are outside the viewport
+  hideBlocks(timelineBlocks, offset);
+
+  //on scolling, show/animate timeline blocks when enter the viewport
+  $(window).on('scroll', function(){
+    (!window.requestAnimationFrame) 
+      ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+      : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+  });
+}
+
+/**
+* Function that hide a timeline block
+*/
+function hideBlocks(blocks, offset) {
+  blocks.each(function(){
+    ( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+  });
+}
+
+/**
+* Function that show a timeline block
+*/
+function showBlocks(blocks, offset) {
+  blocks.each(function(){
+    ( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+  });
+}
 
 
 

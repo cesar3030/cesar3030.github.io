@@ -134,6 +134,7 @@ section#welcome{
     }
     .pf-welcome__plus h2{
       font-size:14px;
+      margin-top: 10px;
     }
   }
 
@@ -358,13 +359,14 @@ section#welcome{
   display: inline-block;
   height: 100%;
   width:21%;
+  min-height: 163px;
   margin-top:1.5%;
   margin-left: 3%;
   padding-bottom: 2%;
   background-color: white;
   box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);
   color : rgba(78, 78, 78, 0.8);
-  vertical-align: middle;
+  vertical-align: middle;    
 }
 
   .pf-skills-content ul{
@@ -471,34 +473,6 @@ section#welcome{
   }
 }
 
-  
-/*
-  .pf-contact-circle{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: rgba(251, 242, 242, 0.14);
-    border-width: 7px;
-    border-color: rgba(230, 230, 230, 0.72);
-    border-style: solid;
-  }
-
-  .pf-contact-circle:hover{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: white;
-    border-width: 7px;
-    border-color: #499ff4;
-    border-style: solid;
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-  }
-
-  .pf-contact-circle:after{    
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-  }*/
 
 .pf-contact-resume{
   float:right;

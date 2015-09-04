@@ -1,5 +1,6 @@
 /**
 * Modification of codyhouse's the timeline css
+* project url: http://codyhouse.co/gem/vertical-timeline/
 */
 
 .cd-container::after {
@@ -43,12 +44,6 @@
   display: table;
   clear: both;
 }
-.cd-timeline-block:first-child {
-  margin-top: 0;
-}
-.cd-timeline-block:last-child {
-  margin-bottom: 0;
-}
 @media only screen and (min-width: 738px) {
   .cd-timeline-block {
     margin: 6em auto;
@@ -71,16 +66,6 @@
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
-.cd-timeline-img img {
-  display: block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
-}
 .cd-timeline-img i {
   display: block;
   width: 24px;
@@ -98,8 +83,15 @@
 .cd-experience {
   background: #c03b44;
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
+
+.cd-timeline-img.is-hidden {
+    visibility: hidden;
+}
+.cd-timeline-img.bounce-in {
+  visibility: visible;
+  -webkit-animation: cd-bounce-1 0.6s;
+  -moz-animation: cd-bounce-1 0.6s;
+  animation: cd-bounce-1 0.6s;
 }
 @media only screen and (min-width: 738px) {
   .cd-timeline-img {
@@ -110,15 +102,6 @@
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
-  }
-  .cssanimations .cd-timeline-img.is-hidden {
-    visibility: hidden;
-  }
-  .cssanimations .cd-timeline-img.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-1 0.6s;
-    -moz-animation: cd-bounce-1 0.6s;
-    animation: cd-bounce-1 0.6s;
   }
 }
 
@@ -196,16 +179,16 @@
 .cd-timeline-content h2 {
   color: #499ff4;
   margin: 0;
-  font-size:22px;
+  font-size:15px;
 }
 .cd-timeline-content h3 {
   color: #499ff4;
 }
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content p, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
 }
-.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content .cd-date {
   display: inline-block;
 }
 .cd-timeline-content p {
@@ -222,9 +205,6 @@
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
-}
-.no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
   float: left;
@@ -249,10 +229,20 @@
     font-size: 16px;
     font-size: 1rem;
   }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
+}
+
+.cd-timeline-content.is-hidden {
+    visibility: hidden;
+}
+.cd-timeline-content.bounce-in {
+  visibility: visible;
+  -webkit-animation: cd-bounce-2 0.6s;
+  -moz-animation: cd-bounce-2 0.6s;
+  animation: cd-bounce-2 0.6s;
 }
 @media only screen and (min-width: 738px) {
   .cd-timeline-content {
@@ -265,9 +255,6 @@
     left: 100%;
     border-color: transparent;
     border-left-color: white;
-  }
-  .cd-timeline-content .cd-read-more {
-    float: left;
   }
   .cd-timeline-content .cd-date {
     position: absolute;
@@ -287,23 +274,11 @@
     border-color: transparent;
     border-right-color: white;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-    float: right;
-  }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
     right: 122%;
     text-align: right;
-  }
-  .cssanimations .cd-timeline-content.is-hidden {
-    visibility: hidden;
-  }
-  .cssanimations .cd-timeline-content.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-2 0.6s;
-    -moz-animation: cd-bounce-2 0.6s;
-    animation: cd-bounce-2 0.6s;
-  }
+  }  
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 738px) {
@@ -318,9 +293,6 @@
     left: 100%;
     border-color: transparent;
     border-left-color: white;
-  }
-  .cd-timeline-content .cd-read-more {
-    float: left;
   }
   .cd-timeline-content .cd-date {
     position: absolute;
@@ -340,18 +312,15 @@
     border-color: transparent;
     border-right-color: white;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-    float: right;
-  }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
     right: 137%;
     text-align: right;
   }
-  .cssanimations .cd-timeline-content.is-hidden {
+  .cd-timeline-content.is-hidden {
     visibility: hidden;
   }
-  .cssanimations .cd-timeline-content.bounce-in {
+  .cd-timeline-content.bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-2 0.6s;
     -moz-animation: cd-bounce-2 0.6s;
@@ -361,7 +330,7 @@
 
 @media only screen and (min-width: 738px) {
   /* inverse bounce effect on even content blocks */
-  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+  .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;
