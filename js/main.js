@@ -240,6 +240,12 @@ function timelineEffects(){
       ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
       : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
   });
+
+  $('body').bind('touchmove', function(e) { 
+    (!window.requestAnimationFrame) 
+      ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+      : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+});
 }
 
 /**
