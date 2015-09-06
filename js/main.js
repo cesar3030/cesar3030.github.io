@@ -37,7 +37,9 @@ $(document).ready(function(){
   showMobileNavigation();
   terminalAnimation(); 
   addEmailAddress();
-  timelineEffects();
+  //timelineEffects();
+  //we hide the timeline elements to display them with an animation
+  $('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
 });
 
 $(window).load(function(){
@@ -65,7 +67,13 @@ function headerEffect(){
         }
         else if( animClassDown === "pf-header-show"){
           $(".pf-mobile-navigation-trigger").fadeIn(300);          
-        }              
+        }
+        
+        //Show the timeline elements if they are hidden 
+        if($el.find('.cd-timeline-img').hasClass('is-hidden')){
+          $el.find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+        }  
+
       }
       else if( direction === 'up' && animClassUp ){
         //console.log("section:"+$el.attr("id")+"\n action up:"+animClassUp);
@@ -114,6 +122,7 @@ function headerEffect(){
  * Function that initialise the smoothNavigation
  */
 function smoothNavigation(){
+  //If a link is cliked
   $("a.nav").on('click',function(ev){
     ev.preventDefault();
     //When a link is clicked from the mobile navigation
@@ -121,9 +130,13 @@ function smoothNavigation(){
       $(".pf-mobile-navigation-trigger").find("span").first().removeClass("is-clicked");
       $("#pf-header").switchClass("pf-header-show","pf-header-hide");
     }
+    $(window).scrollTo($($(this).attr("href")),1000);    
+  });
 
-    $(window).scrollTo($($(this).attr("href")),1000);
-    
+  //if a navigation button is clicked
+  $("button.nav").on('click',function(ev){
+    ev.preventDefault();
+    $(window).scrollTo($($(this).attr("data-href")),1000);
   });
 }
 
