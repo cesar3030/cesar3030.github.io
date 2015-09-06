@@ -31,19 +31,14 @@ var index=0;
 * Fontions run when the page is loaded
 */
 $(document).ready(function(){
-  //headerEffect();
-
+  
+  headerEffect();
   smoothNavigation();
   showMobileNavigation();
   terminalAnimation(); 
   addEmailAddress();
-  //timelineEffects();
-  //we hide the timeline elements to display them with an animation
-  $('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-});
-
-$(window).load(function(){
-  headerEffect();
+  timelineEffects();
+  
 });
 /**
  * Function that initialise the header effect that show and hide the header 
@@ -67,13 +62,7 @@ function headerEffect(){
         }
         else if( animClassDown === "pf-header-show"){
           $(".pf-mobile-navigation-trigger").fadeIn(300);          
-        }
-        
-        //Show the timeline elements if they are hidden 
-        if($el.find('.cd-timeline-img').hasClass('is-hidden')){
-          $el.find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-        }  
-
+        }        
       }
       else if( direction === 'up' && animClassUp ){
         //console.log("section:"+$el.attr("id")+"\n action up:"+animClassUp);
@@ -254,7 +243,8 @@ function timelineEffects(){
       : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
   });
 
-  $('body').bind('touchmove', function(e) { 
+  $(window).bind('touchmove', function(e) { 
+    e.preventDefault();
     (!window.requestAnimationFrame) 
       ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
       : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
