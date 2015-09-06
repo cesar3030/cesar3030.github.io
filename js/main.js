@@ -31,7 +31,7 @@ var index=0;
 * Fontions run when the page is loaded
 */
 $(document).ready(function(){
-  
+
   headerEffect();
   smoothNavigation();
   showMobileNavigation();
@@ -243,8 +243,7 @@ function timelineEffects(){
       : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
   });
 
-  $(window).bind('touchmove', function(e) { 
-    e.preventDefault();
+  $(window).on('touchmove', function() { 
     (!window.requestAnimationFrame) 
       ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
       : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
