@@ -245,7 +245,7 @@ function timelineEffects(){
     (!window.requestAnimationFrame) 
       ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
       : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
-});
+  });
 }
 
 /**

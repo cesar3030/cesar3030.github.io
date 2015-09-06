@@ -10,12 +10,12 @@
   clear: both;
 }
 
-#cd-timeline {
+#cd-education-timeline, #cd-experiences-timeline {
   position: relative;
   padding-top: 14px;
   /*margin-top: 2em;*/
 }
-#cd-timeline::before {
+#cd-education-timeline::before,#cd-experiences-timeline::before {
   /* this is the vertical line */
   content: '';
   position: absolute;
@@ -26,10 +26,10 @@
   background: #d7e4ed;
 }
 @media only screen and (min-width: 738px) {
-  #cd-timeline {
+  #cd-education-timeline, #cd-experiences-timeline {
     margin-top:0.11px;    
   }
-  #cd-timeline::before {
+  #cd-education-timeline::before, #cd-experiences-timeline::before {
     left: 50%;
     margin-left: -2px;
   }
