@@ -12,12 +12,12 @@ var terminalContent=[
 },
 {
   type: "query",
-  content: "cat profil.txt",
+  content: "cat About_me.txt",
   timeout:1
 },
 {
   type: "answer",
-  content: "Hello, I’m César, a software engineering student & full stack developer with a huge interest in web technologies.<br>When I’m not working or training with my triathlon club, you can catch me at a software meetup in Montreal discussing the latest in tech/programming/web tech (or whatever it is you talk about). Programming is more than a job for me, it’s a passion. I’m studying software engineering to find simple solutions to complex problems.<br>I’m looking for an internship where I will contribute to the team as a software engineer and make a difference. I would like to work on challenging and high impact projects with great personal development opportunities. Working in a team oriented environment with an agile development mentality will accelerate my learning and as a member on your team my participation will have a high impact in the success of your project.",
+  content: "Hello, I’m César, a software engineering student & full stack developer with a huge interest in web technologies.<br>When I’m not working or training with my triathlon club, you can catch me at a software meetup in Montreal discussing the latest in tech/programming/web tech (or whatever it is you talk about). Programming is more than a job for me, it’s a passion. I’m studying software engineering to find simple solutions to complex problems.",
   timeout:1
 },
 {
