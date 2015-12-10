@@ -223,10 +223,11 @@
 	],
 	"file_history":
 	[
+		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/js/main.js",
+		"/Users/Iron_Cesar/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
 		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/index.html",
 		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/css/style.css",
 		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/css/terminal.css",
-		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/js/main.js",
 		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/css/header.css",
 		"/Users/Iron_Cesar/Google Drive/Workspace WEB/Portfolio/css/timeline.css",
 		"/Users/Iron_Cesar/Pictures/cesar_linkedin.jpg",
@@ -244,7 +245,6 @@
 		"/Users/Iron_Cesar/Downloads/mdl-templates/templates/android-dot-com/styles.css",
 		"/Users/Iron_Cesar/Downloads/mdl-templates/templates/android-dot-com/index.html",
 		"/Users/Iron_Cesar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/Iron_Cesar/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
 		"/Users/Iron_Cesar/Dropbox/sauvegarde WWW 29 octobre 2013/CEESQ2/Style/style.css",
 		"/Users/Iron_Cesar/Desktop/minittest last fail.tns",
 		"/Users/Iron_Cesar/Desktop/test.tns",
@@ -478,7 +478,7 @@
 		"cols":
 		[
 			0.0,
-			0.408113169303,
+			0.0616522811344,
 			1.0
 		],
 		"rows":
@@ -538,7 +538,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -546,7 +546,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 203.0,
+	"side_bar_width": 244.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
