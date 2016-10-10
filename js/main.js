@@ -1,4 +1,4 @@
-//JSON Array that contain the terminal lines
+//JSON Array that contain terminal texts
 var terminalContent=[
 {
   type: "query",
@@ -17,7 +17,7 @@ var terminalContent=[
 },
 {
   type: "answer",
-  content: "Hello, I’m César, a software engineering student & full stack developer with a huge interest in web technologies.<br>When I’m not working or training with my triathlon club, you can catch me at a software meetup in Montreal discussing anything and everything from software development to team management. Programming is more than a job for me, it’s a passion. I’m studying software engineering to find simple solutions to complex problems.",
+  content: "Hello, I’m César, a software engineering student & full stack developer with a huge interest in web technologies.<br>When I’m not working or training with my triathlon club, you can catch me at a software meetup in San Francsico discussing anything and everything from software development to team management. Programming is more than a job for me, it’s a passion. I’m studying software engineering to find simple solutions to complex problems.",
   timeout:1
 },
 {
@@ -55,7 +55,6 @@ function headerEffect(){
 
     $el.waypoint( function( direction ) {
       if( direction === 'down' && animClassDown ) {
-        //console.log("section:"+$el.attr("id")+"\n action down:"+animClassDown);
         //If it's the mobile version the target is the trigger button, not the header
         if($(window).width()>738){
           $head.attr('class', 'pf-header ' + animClassDown); 
@@ -65,8 +64,6 @@ function headerEffect(){
         }        
       }
       else if( direction === 'up' && animClassUp ){
-        //console.log("section:"+$el.attr("id")+"\n action up:"+animClassUp);
-        //If it's the mobile version the target is the trigger button, not the header
         if($(window).width()>738){
            $head.attr('class', 'pf-header ' + animClassUp); 
         }
@@ -111,7 +108,6 @@ function headerEffect(){
  * Function that initialise the smoothNavigation
  */
 function smoothNavigation(){
-  //If a link is cliked
   $("a.nav").on('click',function(ev){
     ev.preventDefault();
     //When a link is clicked from the mobile navigation
@@ -149,8 +145,7 @@ function showMobileNavigation(){
 }
 
 /**
-* Fonction that trigger the adding of a new row.
-* A timeout is setted if the object has one.
+* Fonction that adds a new row.
 */
 function terminalAnimation(){
   if(index<terminalContent.length){
@@ -198,10 +193,10 @@ function addTerminalRow(object){
 }
 
 /**
-* Function that type the text given in the last row of the terminal
+* Function that type the given text in the last row of the terminal
 * 
-* For the terminal typing animation, i use the plugin
-* Typing.js ->  http://www.mattboldt.com/demos/typed-js/ 
+* Plugin used for the typing animation:
+*   Typing.js ->  http://www.mattboldt.com/demos/typed-js/ 
 *
 */
 function typeText(text){
@@ -217,7 +212,7 @@ function typeText(text){
 }
 
 /**
-* Function that add my email address in the DOM to protect mailto links
+* Function that adds my email address in the DOM to protect mailto links
 */
 function addEmailAddress(){
   var fristPart="contact";
@@ -227,7 +222,7 @@ function addEmailAddress(){
 
 
 /**
-* Function that initialise the timeline annimation
+* Function that initialises timeline annimation
 */
 function timelineEffects(){
   timelineBlocks = $('.cd-timeline-block');
@@ -251,7 +246,7 @@ function timelineEffects(){
 }
 
 /**
-* Function that hide a timeline block
+* Function to hide a timeline block
 */
 function hideBlocks(blocks, offset) {
   blocks.each(function(){
@@ -260,7 +255,7 @@ function hideBlocks(blocks, offset) {
 }
 
 /**
-* Function that show a timeline block
+* Function to show a timeline block
 */
 function showBlocks(blocks, offset) {
   blocks.each(function(){
