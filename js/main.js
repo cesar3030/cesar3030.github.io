@@ -17,7 +17,7 @@ var terminalContent=[
 },
 {
   type: "answer",
-  content: "Hello, I’m César, a software engineering student & full stack developer with a huge interest in web technologies.<br>When I’m not working or training with my triathlon club, you can catch me at a software meetup in San Francsico discussing anything and everything from software development to team management. Programming is more than a job for me, it’s a passion. I’m studying software engineering to find simple solutions to complex problems.",
+  content: "Hello, I’m César, a software engineering student & full stack developer with a huge interest in web technologies.<br>When I’m not working or training with my triathlon club, you can catch me at a software meetup in Montreal discussing anything and everything from software development to team management. Programming is more than a job for me, it’s a passion. I’m studying software engineering to find simple solutions to complex problems.",
   timeout:1
 },
 {
