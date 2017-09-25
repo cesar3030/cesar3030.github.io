@@ -28,7 +28,7 @@ var terminalContent=[
 var index=0;
 
 /**
-* Fontions run when the page is loaded
+* Fontions to run when the page is loaded
 */
 $(document).ready(function(){
 
@@ -46,12 +46,12 @@ $(document).ready(function(){
  */
 function headerEffect(){
   
-  var $head = $( '#pf-header' );
+  var $head = $('#pf-header');
     
-  $( '.pf-waypoint' ).each( function(i) {
+  $('.pf-waypoint').each( function(i) {
     var $el = $( this ),
-    animClassDown = $el.data( 'animateDown' ),
-    animClassUp = $el.data( 'animateUp' );
+    animClassDown = $el.data('animateDown'),
+    animClassUp = $el.data('animateUp');
 
     $el.waypoint( function( direction ) {
       if( direction === 'down' && animClassDown ) {
@@ -59,11 +59,11 @@ function headerEffect(){
         if($(window).width()>738){
           $head.attr('class', 'pf-header ' + animClassDown); 
         }
-        else if( animClassDown === "pf-header-show"){
+        else if(animClassDown === "pf-header-show"){
           $(".pf-mobile-navigation-trigger").fadeIn(300);          
         }        
       }
-      else if( direction === 'up' && animClassUp ){
+      else if(direction === 'up' && animClassUp){
         if($(window).width()>738){
            $head.attr('class', 'pf-header ' + animClassUp); 
         }
@@ -162,7 +162,7 @@ function terminalAnimation(){
 }
 
 /**
-* Function that insert html in DOM to add a new row in the terminal
+* Function to insert html in DOM that adds a new row in the terminal
 */
 function addTerminalRow(object){
   var text="";
@@ -193,7 +193,7 @@ function addTerminalRow(object){
 }
 
 /**
-* Function that type the given text in the last row of the terminal
+* Function that types the given text in the last row of the terminal
 * 
 * Plugin used for the typing animation:
 *   Typing.js ->  http://www.mattboldt.com/demos/typed-js/ 
