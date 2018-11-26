@@ -1,29 +1,31 @@
 //JSON Array that contain terminal texts
-var terminalContent=[
-{
-  type: "query",
-  content: "echo 'Hello World !'",
-  timeout:2
-},
-{
-  type: "answer",
-  content: "Hello world !",
-  timeout:1
-},
-{
-  type: "query",
-  content: "cat About_me.txt",
-  timeout:1
-},
-{
-  type: "answer",
-  content: "Hello, I’m César, a software engineering student & full stack developer with a huge interest in web technologies.<br>When I’m not working or training with my triathlon club, you can catch me at a software meetup in Montreal discussing anything and everything from software development to team management. Programming is more than a job for me, it’s a passion. I’m studying software engineering to find simple solutions to complex problems.",
-  timeout:1
-},
-{
-  type: "query",
-  content: ""
-}];
+var terminalContent = [
+  {
+    type: "query",
+    content: "echo 'Hello World !'",
+    timeout:2
+  },
+  {
+    type: "answer",
+    content: "Hello world !",
+    timeout:1
+  },
+  {
+    type: "query",
+    content: "cat About_me.txt",
+    timeout:1
+  },
+  {
+    type: "answer",
+    content: "Hello, I’m César, a software engineering & full stack developer with a huge interest in web technologies.<br>When I’m not working or training with my triathlon club, you can catch me at a software meetup in Montreal discussing anything and everything from software development to team management. Programming is more than a job for me, it’s a passion. I’m doing software engineering to find simple solutions to complex problems.",
+    timeout:1
+  },
+  {
+    type: "query",
+    content: ""
+  }
+];
+
 //The current index used to display the text in the terminal
 var index=0;
 
