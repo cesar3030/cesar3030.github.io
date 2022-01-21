@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="./img/favicon.png" />
 
-    <title>César Jeanroy</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="./img/favicon.png" />
 
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>César Jeanroy</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./bower_components/material-design-lite/material.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/timeline.css">
-    <link rel="stylesheet" href="./css/terminal.css">
-    
-    <!-- JS -->
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script> 
-    <script src="./bower_components/material-design-lite/material.min.js"></script>
-    <script src="./bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="./bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
-    <script src="./bower_components/typed.js/dist/typed.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/modernizr.custom.js"></script>
-    
-    <!-- Google Analytics-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-      ga('create', 'UA-66975200-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </head>
-  <body>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./bower_components/material-design-lite/material.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/timeline.css">
+  <link rel="stylesheet" href="./css/terminal.css">
+
+  <!-- JS -->
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script src="./bower_components/material-design-lite/material.min.js"></script>
+  <script src="./bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="./bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+  <script src="./bower_components/typed.js/dist/typed.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/modernizr.custom.js"></script>
+
+  <!-- Google Analytics-->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-66975200-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
   <header>
-    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-mobile-navigation-trigger">
-        <span class="cd-menu-icon"></span>
+    <button
+      class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-mobile-navigation-trigger">
+      <span class="cd-menu-icon"></span>
     </button>
     <div id="pf-header" class="pf-header pf-header-hide">
-        <a class="nav" href="#welcome"><span>César Jeanroy</span></a>
-        <nav>
-          <ul>
-            <li><a class="nav" href="#education">Education</a></li>
-            <li><a class="nav" href="#experiences">Experiences</a></li>
-            <li><a class="nav" href="#technical-skills">Technical skills</a></li>
-            <!-- <li><a class="nav" href="#projects">Projects</a></li> -->
-            <li><a class="nav" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+      <a class="nav" href="#welcome"><span>César Jeanroy</span></a>
+      <nav>
+        <ul>
+          <li><a class="nav" href="#experiences">Experiences</a></li>
+          <li><a class="nav" href="#education">Education</a></li>
+          <li><a class="nav" href="#technical-skills">Technical skills</a></li>
+          <!-- <li><a class="nav" href="#projects">Projects</a></li> -->
+          <li><a class="nav" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <section id="welcome">
@@ -74,19 +79,115 @@
       </div>
     </div>
 
-    <button class="nav mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-welcome-btn" data-href="#education">
-        <i class="material-icons">keyboard_arrow_down</i>
+    <button class="nav mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored pf-welcome-btn"
+      data-href="#experiences">
+      <i class="material-icons">keyboard_arrow_down</i>
     </button>
 
     <div class="pf-welcome__plus pf-welcome--white">
       <h1>César Jeanroy</h1>
-      <h2>software engineering consultant & Full-stack developer</h2>    
+      <h2>Full Stack developer</h2>
     </div>
 
   </section>
+
+  <section id="experiences" class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-show">
+    <div id="cd-experiences-timeline" class="cd-container pf-section pf-section--gray">
+
+      <div class="pf-section-title">
+        <h2>Experiences</h2>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-experience">
+          <i class="material-icons">supervisor_account</i>
+        </div>
+        <div class="cd-timeline-content">
+          <h2>Full stack developer</h2>
+          <p>BusBud Inc.</p>
+          <address>Montreal, Canada</address>
+          <span class="cd-date">4/20 - Now</span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-experience">
+          <i class="material-icons">supervisor_account</i>
+        </div>
+        <div class="cd-timeline-content">
+          <h2>Software Engineering Consultant</h2>
+          <p>Cesar Jeanroy Inc.</p>
+          <address>Montreal, Canada</address>
+          <span class="cd-date">6/18 - Now</span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-experience">
+          <i class="material-icons">supervisor_account</i>
+        </div>
+        <div class="cd-timeline-content">
+          <h2>DevOps</h2>
+          <p>National Bank of Canada</p>
+          <address>Montreal, Canada</address>
+          <span class="cd-date">1/18 - 6/18</span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-experience">
+          <i class="material-icons">supervisor_account</i>
+        </div>
+        <div class="cd-timeline-content">
+          <h2>Full-stack Engineering Internship</h2>
+          <p>Strava</p>
+          <address>San Francisco, USA</address>
+          <span class="cd-date">5/16 - 1/17</span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-experience">
+          <i class="material-icons">supervisor_account</i>
+        </div>
+        <div class="cd-timeline-content">
+          <h2>Java & Full-stack Developer</h2>
+          <p>National Bank of Canada</p>
+          <address>Montreal, Canada</address>
+          <span class="cd-date">4/14 - 5/16</span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-experience">
+          <i class="material-icons">supervisor_account</i>
+        </div>
+        <div class="cd-timeline-content">
+          <h2>Teacher Assistant</h2>
+          <p>École de Technologie Suppérieure</p>
+          <address>Montreal, Canada</address>
+          <span class="cd-date">9/15 - now</span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-experience">
+          <i class="material-icons">supervisor_account</i>
+        </div>
+        <div class="cd-timeline-content">
+          <h2>PHP/MySQL Developer</h2>
+          <p>CEESQ</p>
+          <address>Montréal, Canada</address>
+          <span class="cd-date">3/13 - 5/13</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <section id="education" class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-hide">
-    <div id="cd-education-timeline" class="cd-container pf-section pf-section--gray"> 
-      
+    <div id="cd-education-timeline" class="cd-container pf-section pf-section--gray">
+
       <div class="pf-section-title">
         <h2>Education</h2>
       </div>
@@ -96,7 +197,7 @@
           <i class="material-icons">account_balance</i>
         </div>
         <div class="cd-timeline-content">
-          <h2>Software Engineering (GPA 3.75)</h2>
+          <h2>Software Engineering</h2>
           <p>École de Technologie Supérieure</p>
           <address>Montreal, Canada</address>
           <span class="cd-date">2013 - 2018</span>
@@ -153,88 +254,9 @@
 
     </div>
   </section>
-  <section id="experiences" class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-show">
-    <div id="cd-experiences-timeline" class="cd-container pf-section pf-section--gray"> 
 
-      <div class="pf-section-title">
-        <h2>Experiences</h2>
-      </div>
-
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-experience">
-          <i class="material-icons">supervisor_account</i>
-        </div>
-        <div class="cd-timeline-content">
-          <h2>Software Engineering Consultant</h2>
-          <p>Cesar Jeanroy Inc.</p>
-          <address>Montreal, Canada</address>
-          <span class="cd-date">6/18 - Now</span>
-        </div> 
-      </div>
-
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-experience">
-          <i class="material-icons">supervisor_account</i>
-        </div>
-        <div class="cd-timeline-content">
-          <h2>DevOps</h2>
-          <p>National Bank of Canada</p>
-          <address>Montreal, Canada</address>
-          <span class="cd-date">1/18 - 6/18</span>
-        </div> 
-      </div>
-
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-experience">
-          <i class="material-icons">supervisor_account</i>
-        </div>
-        <div class="cd-timeline-content">
-          <h2>Full-stack Engineering Internship</h2>
-          <p>Strava</p>
-          <address>San Francisco, USA</address>
-          <span class="cd-date">5/16 - 1/17</span>
-        </div> 
-      </div>
-      
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-experience">
-          <i class="material-icons">supervisor_account</i>
-        </div>
-        <div class="cd-timeline-content">
-          <h2>Java & Full-stack Developer</h2>
-          <p>National Bank of Canada</p>
-          <address>Montreal, Canada</address>
-          <span class="cd-date">4/14 - 5/16</span>
-        </div>
-      </div>
-
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-experience">
-          <i class="material-icons">supervisor_account</i>
-        </div>
-        <div class="cd-timeline-content">
-          <h2>Teacher Assistant</h2>
-          <p>École de Technologie Suppérieure</p>
-          <address>Montreal, Canada</address>
-          <span class="cd-date">9/15 - now</span>
-        </div>
-      </div>
-
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-experience">
-          <i class="material-icons">supervisor_account</i>
-        </div>
-        <div class="cd-timeline-content">
-          <h2>PHP/MySQL Developer</h2>
-          <p>CEESQ</p>
-          <address>Montréal, Canada</address>
-          <span class="cd-date">3/13 - 5/13</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <section id="technical-skills" class="pf-waypoint" data-animate-down="pf-header-show" data-animate-up="pf-header-show">
+  <section id="technical-skills" class="pf-waypoint" data-animate-down="pf-header-show"
+    data-animate-up="pf-header-show">
     <div class="pf-section pf-section--grey">
       <div class="pf-skills-line">
 
@@ -245,41 +267,34 @@
         <div class="pf-skills-content">
           <div class="pf-skills-content-title">Frontend</div>
           <ul>
-            <li class="pf-skills-main">React</li>
-            <li class="pf-skills-main">Redux</li>
-            <li class="pf-skills-main">TypeScript</li>
-            <li class="pf-skills-main">HTML5</li>
-            <li class="pf-skills-main">CSS3</li>
-            <li class="pf-skills-main">Bootstrap</li>
+            <li>React (CSR & SSR)</li>
+            <li>TypeScript</li>
+            <li>Redux</li>
             <li>Angular 2+</li>
-            <li>jQuery</li>
             <li>CoffeeScript</li>
-            <li>Haml / Hamlc</li>
-            <li>Backbone.JS</li>
-            <li>Vue.JS</li>
-            <li>Highcharts / Highstock</li>
+            <li>Backbone.js</li>
+            <li>Vue.js</li>
+            <li>Highcharts</li>
           </ul>
         </div>
 
         <div class="pf-skills-content">
           <div class="pf-skills-content-title">Backend / API</div>
           <ul>
-            <li class="pf-skills-main">Ruby On Rails</li>
-            <li class="pf-skills-main">Node.js / Express.js / Nest.js</li>
-            <li class="pf-skills-main">JSP / Tomcat</li>
-            <li class="pf-skills-main">Spring Boot</li>
+            <li>Ruby On Rails</li>
+            <li>Node.js / Express.js / Nest.js</li>
+            <li>JSP / Tomcat</li>
+            <li>Spring Boot</li>
             <li>Laravel</li>
-            <li>PHP</li>
-            <li>ASP/VBScript</li>
           </ul>
         </div>
 
         <div class="pf-skills-content">
-         <div class="pf-skills-content-title">Programming</div>
+          <div class="pf-skills-content-title">Programming</div>
           <ul>
-            <li class="pf-skills-main">Java</li>
-            <li class="pf-skills-main">JavaScript</li>
-            <li class="pf-skills-main">Ruby</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Ruby</li>
             <li>Haskell</li>
             <li>Scheme</li>
             <li>C</li>
@@ -294,57 +309,55 @@
         <div class="pf-skills-content">
           <div class="pf-skills-content-title">Tools</div>
           <ul>
-            <li class="pf-skills-main">npm</li>
-            <li class="pf-skills-main">WebPack</li>
-            <li class="pf-skills-main">Babel</li>
+            <li>npm/yarn</li>
+            <li>WebPack</li>
+            <li>Babel</li>
             <li>Grunt</li>
-            <li>Bower</li>
-            <li>Yeoman</li>
-            <li>Intellij</li>
+            <li>Husky</li>
+            <li>Lerna</li>
           </ul>
         </div>
       </div>
       <div class="pf-skills-line">
 
         <div class="pf-skills-content">
-          <div class="pf-skills-content-title">Continuous Integration</div>
+          <div class="pf-skills-content-title">Infrastructure</div>
           <ul>
-            <li class="pf-skills-main">Docker</li>
-            <li class="pf-skills-main">Ansible</li>
-            <li class="pf-skills-main">Jenkins</li>
-            <li class="pf-skills-main">Heroku</li>
-            <li>Bitbucket</li>
-            <li>GitHub</li>
+            <li>Docker</li>
+            <li>Ansible</li>
+            <li>Jenkins</li>
+            <li>Terraform</li>
+            <li>Kubernetes</li>
+            <li>GCP & AWS</li>
+            <li>Heroku</li>
           </ul>
         </div>
 
         <div class="pf-skills-content">
           <div class="pf-skills-content-title">Environment</div>
           <ul>
-            <li class="pf-skills-main">Linux</li>
-            <li class="pf-skills-main">OSX</li>
+            <li>Linux</li>
+            <li>OSX</li>
             <li>Windows</li>
           </ul>
         </div>
         <div class="pf-skills-content">
           <div class="pf-skills-content-title">Database</div>
           <ul>
-            <li class="pf-skills-main">MySQL</li>
-            <li>MongoDB</li>
             <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
           </ul>
         </div>
 
         <div class="pf-skills-content">
-          <div class="pf-skills-content-title">Team work</div>
+          <div class="pf-skills-content-title">Cooperation</div>
           <ul>
-            <li class="pf-skills-main">GitHub</li>
-            <li class="pf-skills-main">JIRA</li>
-            <li class="pf-skills-main">Slack</li>
-            <li class="pf-skills-main">Trello</li>
-            <li>Cacoo</li>
-            <li>Agile methods</li>
-            <li>TDD</li>
+            <li>GitHub</li>
+            <li>JIRA</li>
+            <li>Slack</li>
+            <li>Trello</li>
+            <li>Miro</li>
           </ul>
         </div>
       </div>
@@ -364,25 +377,26 @@
           <p>Montreal, Canada</p>
         </li>
         <li>
-          <a href="./other/Cesar_Jeanroy-Resume.pdf" download style="color:#499FF4;">
+          <a href="./other/Cesar_Jeanroy-Resume.pdf" target="_blank" download style="color:#499FF4;">
             <i class="material-icons">description</i>
             <p>Download my resume !</p>
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/pub/c%C3%A9sar-jeanroy/81/107/5a8" target="_blank">
-            <img src="./img/linkedin.png" alt="linkedIn_logo"/>
+            <img src="./img/linkedin.png" alt="linkedIn_logo" />
             <p>LinkedIn Cesar Jeanroy</p>
           </a>
         </li>
         <li>
           <a href="https://github.com/cesar3030" target="_blank">
-            <img src="./img/github.png" alt="github_logo"/>
+            <img src="./img/github.png" alt="github_logo" />
             <p>GitHub (cesar3030)</p>
           </a>
         </li>
       </ul>
     </div>
   </footer>
-  </body>
+</body>
+
 </html>
